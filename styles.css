@@ -1,0 +1,108 @@
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+
+#main-nav {
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    Justify-content: space-between;
+}
+
+a:link {
+    color: #EF82C3;
+    text-decoration: none;
+
+}
+
+a:visited {
+    color: #EF82C3;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: #818CEF;
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+
+#about-us {
+    font-size: 50px;
+    height: 300px;
+    padding: 5px;
+    border: 3px solid #EF82C3;
+    background-color: #EF82C3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+#html-basics {
+    height: 300px;
+    font-size: 50px;
+    padding: 2px;
+    border: 3px solid #EFE481;
+    background-color: #EFE481;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+img {
+    height: 200px;
+}
+
+#css-basics {
+    font-size: 50px;
+    height: 300px;
+    padding: 2px;
+    border: 3px solid #81EFAD;
+    background-color: #81EFAD;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#javascript-basics {
+    font-size: 50px;
+    height: 300px;
+    padding: 2px;
+    border: 3px solid #818CEF;
+    background-color: #818CEF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#react-basics {
+    font-size: 50px;
+    height: 300px;
+    padding: 2px;
+    border: 3px solid #EFAD81;
+    background-color: #EFAD81;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+article {
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+.article-excerpts {
+    height: 250px;
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
