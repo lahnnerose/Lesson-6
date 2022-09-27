@@ -1,22 +1,51 @@
+/* Colour Palette
+Dark Purp:  #9e5581;
+Med Pink: #ce70a8; */
+
+
+body {
+    font-size: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px;
+}
+
+
+
+h1 {
+    font-size: 1em;
+    color: #ce70a8;
+}
+
 h2 {
-    font-size: 40px;
+    font-size: 0.875em;
+    color: #fff;
+    margin: 0px;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 0.45em;
 }
 
-
-#main-nav {
-    height: 40px;
-    padding: 10px;
-    display: flex;
-    Justify-content: space-between;
+h4 {
+    font-size: 0.2em;
 }
+
+p {
+    font-size: 0.2em;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
 
 a:link {
     color: #EF82C3;
     text-decoration: none;
+    font-size: 15px;
+    text-align: center;
 
 }
 
@@ -32,77 +61,314 @@ a:hover {
     transition-duration: 0.3s;
 }
 
+/* Header Section */
+
+#main-nav {
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    Justify-content: space-around;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 25px;
+}
+
+
+.fixed-header {
+    width: 100%;
+    height: 40px;
+    padding-bottom: 15px;
+    position: fixed top 0;
+    background: #fff;
+    color: rgb(234, 124, 198);
+}
+
+/* End Header Section */
+
+/* About Us Section */
 
 #about-us {
-    font-size: 50px;
-    height: 300px;
-    padding: 5px;
-    border: 3px solid #EF82C3;
-    background-color: #EF82C3;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    background-color: #f0c9e0;
+    align-items: center;
+    justify-content: center;
+}
+
+.learnCode {
+    transform: rotate(-6deg);
+    font-size: 1em;
+    background-color: #9e5581;
+    color: #fff;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+    margin-right: 0.1em;
+    border: 3px dotted #ffd4d9;
+    display: -webkit-inline-box;
+    white-space: nowrap;
+}
+
+#learnCodeWrapper {
+    padding: 20px;
+}
+
+#about-us #inYourSpareTime {
+    font-size: .6em;
+    color: #ce70a8;
+    white-space: nowrap;
+    text-shadow: 1px 1px 2px #fff;
+    padding-bottom: 0.5em;
+    display: -webkit-inline-box;
+}
+
+
+
+/* End About Us Section */
+
+
+.headingStyle {
+    font-size: .7em;
+    background-color: #9e5581;
+    color: #fff;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+    margin-right: 0.1em;
+    margin-bottom: 0.5em;
+    border: 3px dotted #ffd4d9;
+    display: -webkit-inline-box;
+    white-space: nowrap;
+}
+
+
+/* HTML Basics Section */
+
+#html-basics-section {
+    background-color: #b4baea;
+    background-size: 13%;
+    background-image: url(/images/BG\ check.png);
 }
 
 
 #html-basics {
-    height: 300px;
+    height: 650px;
     font-size: 50px;
     padding: 2px;
-    border: 3px solid #EFE481;
-    background-color: #EFE481;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-
-img {
-    height: 200px;
-}
-
-#css-basics {
+    text-transform: uppercase;
     font-size: 50px;
-    height: 300px;
-    padding: 2px;
-    border: 3px solid #81EFAD;
-    background-color: #81EFAD;
+    /* this doesnt change anything??
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    Justify-content: space-around;
+    flex-wrap: wrap; */
+
 }
 
-#javascript-basics {
-    font-size: 50px;
-    height: 300px;
-    padding: 2px;
-    border: 3px solid #818CEF;
-    background-color: #818CEF;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+#html-basics-section,
+h2 {
+    text-align: center;
+    color: #ce70a8;
+    font-size: 2em;
+    padding: 20px;
 }
 
-#react-basics {
-    font-size: 50px;
-    height: 300px;
-    padding: 2px;
-    border: 3px solid #EFAD81;
-    background-color: #EFAD81;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+#html-article {
+    background-image: url(/images/html1.jpg);
+    background-position: center;
+}
+
+#lists-article {
+    background-image: url(/images/coding1.jpg);
+    word-wrap: break-word;
+}
+
+#links-article {
+    background-image: url(/images/html2.jpg);
+}
+
+#divs-article {
+    background-image: url(/images/coding2.jpg);
+}
+
+#modern-html-article {
+    background-image: url(/images/girlcomputer.jpg);
 }
 
 article {
-    background-color: #FFFFFF;
+    border-radius: 25px;
     padding: 10px;
+    height: 250px;
+    width: 250px;
+    border: 4px solid #9e5581;
+    ;
+    margin: 10px;
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
 }
 
+
 .article-excerpts {
-    height: 250px;
-    border: 2px solid red;
+    height: 20px;
+    color: #fff;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
+    justify-content: space-evenly;
+
+
+}
+
+/* End HTML Basics Section */
+
+
+.container {
+    margin: 0 auto;
+    height: 400px;
+    font-size: 50px;
+    display: flex;
+    Justify-content: space-around;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+
+
+
+/* Sign Up Section */
+
+#signup-form,
+h2 {
+    text-align: center;
+    color: #ce70a8;
+    font-size: 2em;
+    padding: 20px;
+}
+
+
+#signup-form {
+    background-color: antiquewhite;
+    height: 1000px;
+    width: 100%;
+
+
+}
+
+
+/* Sign Up Form */
+.form {
+    padding: 40px;
+    text-align: center;
+    background-color: #f0c9e0;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    border-radius: 25px;
+    border: 10px dotted #ce70a8;
+    box-shadow: 10px 10px 200px orange;
+
+
+}
+
+.field {
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+    color: #858ab2;
+
+}
+
+
+.field input,
+.field ::placeholder,
+.field select {
+    color: #858ab2;
+    border: none;
+    border-bottom: 1.5px solid #ce70a8;
+    background: transparent;
+    outline: none;
+    padding: 3px 2px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+
+}
+
+input:focus,
+input:active {
+    border-color: transparent;
+    border-bottom: 3px solid #ce70a8;
+    ;
+}
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    background-color: #ce70a8;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+    background-color: transparent;
+    color: #9e5581;
+    border: 2px solid #9e5581;
+}
+
+
+
+
+textarea {
+    color: #858ab2;
+    margin: auto;
+    margin-top: 1em;
+    display: block;
+    min-height: 10em;
+    min-width: 20em;
+    border: none;
+    background-color: #FFFFFF50;
+    resize: none;
+    outline: none;
+}
+
+
+/* End Sign Up form */
+
+
+/* MEDIA QUERIES */
+/* Change these values because they are Sams */
+@media only screen and (max-width: 600px) {
+    p {
+        width: 60%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    img {
+        border: 10px solid red;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    img {
+        border: 10px dotted orange;
+    }
+
+    #inYourSpareTime {
+        font-size: 0.2em;
+    }
+
+    button {
+        background-color: pink;
+        height: 30px;
+        width: 200px;
+    }
+}
+
+@media (orientation: portrait) {
+    article {
+        width: 200px;
+    }
+
 }

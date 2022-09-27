@@ -8,144 +8,114 @@
   <link rel="stylesheet" href="styles.css">
   <title>Lesson 6</title>
 </head>
+<header>
 
-<body>
-  <header>
-
-    <nav>
-      <div id="main-nav">
+  <body>
+    <div class="fixed-header">
+      <nav id="main-nav">
         <a href="#about-us">About Us</a>
         <a href="#html-basics">HTML Basics</a>
         <a href="#css-basics">CSS Basics</a>
         <a href="#javascript-basics">Javacript Basics</a>
         <a href="#react-basics">React Basics</a>
-
-
-
-      </div>
-
-    </nav>
-
-
-
-  </header>
-  <!-- This section will be an intro to the website -->
-  <section id="about-us">
-    <div>
-      Learn code
-
+      </nav>
     </div>
-    <div>
+    </div>
 
+
+</header>
+<!-- This section will be an intro to the website -->
+<section id="about-us" class="container">
+  <div id="learnCodeWrapper">
+    <h1>
+      <span class="learnCode">
+        Learn code
+      </span>
+    </h1>
+    <h1 id="inYourSpareTime">
       in your spare time!
+    </h1>
+  </div>
+</section>
+
+
+<!-- This section will be HTML basics -->
+<section id="html-basics-section">
+  <h2><span class="headingStyle">HTML Basics</span></h2>
+  <div id="html-basics" class="container">
+    <div class="article-excerpts">
+      <article id="html-article">
+        <h3> What is HTML?</h3>
+      </article>
+      <article id="links-article">
+        <h3>Links</h3>
+      </article>
+      <article id="lists-article">
+        <h3>Lists, Tables and Images</h3>
+      </article>
+      <article id="divs-article">
+        <h3>Divs and Spans</h3>
+      </article>
+      <article id="modern-html-article">
+        <h3>Modern HTML</h3>
+      </article>
 
     </div>
 
+</section>
 
-  </section>
-
-  <!-- This section will be HTML basics -->
-  <section>
-    <section id="html-basics">
-      <h2>HTML Basics</h2>
-      <img src="./images/html1.jpg">
-      <img src="./images/html2.jpg">
-
-
-
-      <!-- This article will be HTML How To's -->
-      <div class="article-excerpts">
-        <article>
-          <h3> What is HTML?</h3>
-        </article>
-        <article>
-          <h3>Links</h3>
-        </article>
-        <article>
-          <h3>Lists, Tables and Images</h3>
-        </article>
-        <article>
-          <h3>Divs and Spans</h3>
-        </article>
-        <article>
-          <h3>Modern HTML</h3>
-        </article>
-
+<!-- Contact Us Form Section -->
+<section id="signup-form">
+  <h2><span class="headingStyle">Sign Up</span></h2>
+  <div class="field">
+    <form class="form" accept-charset="UTF-8" action="https://www.formbackend.com/f/4f51ba137fd333c6" method="POST">
+      <h2>Your Deets</h2>
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <select id="Course-Type">
+        <option value="">Select Course</option>
+        <option value="HTML">HTML Basics</option>
+        <option value="CSS">CSS Crash</option>
+        <option value="Javascript">Javascript Jungle</option>
+        <option value="React">React Realness</option>
+        <option value="Node">Ode to Node</option>
+      </select>
+      <div class="field">
+        <h2>Experience Level</h2>
+        <input type="radio" name="experience" id="beginner" value="Beginner">
+        <label for="beginner">Complete N00b</label>
+      </div>
+      <div class="field">
+        <input type="radio" name="experience" id="Intermediate" value="Intermediate">
+        <label for="Intermediate">I know a little</label>
+      </div>
+      <div class="field">
+        <input type="radio" name="experience" id="advanced" value="Intermediate">
+        <label for="advanced">I know a lot!</label>
+      </div>
+      <div class="field">
+        <label for="about-you">
+          Tell us a little about yourself
+        </label>
+        <textarea id="about-you"></textarea>
+      </div>
+      <input type="checkbox" name="excited" id="excited" value="'excited">
+      <label for="excited">Yep, I'm excited!</label>
+      <div class="field">
+        </divclass>
+        <input type="submit" value="Sign Up">
       </div>
 
-    </section>
-  </section>
-  <!-- This section will be CSS basics -->
-
-  <section id="css-basics">
-    <h2>CSS Basics</h2>
+  </div>
 
 
-
-    <!-- This article will be CSS How To's -->
-    <div class="article-excerpts">
-      <article>
-        <h3> What is CSS?</h3>
-      </article>
-      <article>
-        <h3>Colours and Fonts</h3>
-      </article>
-      <article>
-        <h3>Image and Background Styling</h3>
-      </article>
-      <article>
-        <h3>ID's and Classes</h3>
-      </article>
-      <article>
-        <h3>Selectors and Positioning</h3>
-      </article>
-    </div>
+  </form>
 
 
+  </div>
 
-  </section>
-  <!-- This section will be Javascript basics - coming soon -->
-  <section id="javascript-basics">
-    <h2>Javacript Basics</h2>
+</section>
 
-
-
-
-    <!-- This article will be Javascript How To's-->
-    <article>
-      <h3> What is Javascript?</h3>
-
-
-
-    </article>
-  </section>
-
-  <!-- This section will be React basics - coming soon -->
-  <section id="react-basics">
-    <h2>React Basics</h2>
-
-
-
-
-    <!-- This article will be React How To's-->
-    <div class="article-excerpts">
-      <article>
-        <h3> What is React?</h3>
-
-
-
-      </article>
-    </div>
-  </section>
-
-
-
-  <footer>
-
-
-
-
-  </footer>
 
 </body>
 
