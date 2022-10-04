@@ -1,13 +1,19 @@
 /* Colour Palette
-Dark Purp:  #9e5581;
-Med Pink: #ce70a8; */
+Dark Purp:  #9e5581
+Med Pink: #ce70a8
+Light Blue #b4baea */
+
 
 
 body {
-    font-size: 100%;
     padding-top: 10px;
-    padding-bottom: 10px;
     margin: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    font-size: 16px;
+
 }
 
 
@@ -15,12 +21,15 @@ body {
 h1 {
     font-size: 1em;
     color: #ce70a8;
+    font-family: 'Times New Roman', serif;
 }
+
 
 h2 {
     font-size: 0.875em;
     color: #fff;
     margin: 0px;
+    font-family: 'Times New Roman', serif;
 }
 
 h3 {
@@ -68,6 +77,7 @@ a:hover {
     padding: 10px;
     display: flex;
     Justify-content: space-around;
+    gap: 1em;
     text-transform: uppercase;
     color: #fff;
     text-decoration: none;
@@ -88,11 +98,21 @@ a:hover {
 
 /* About Us Section */
 
-#about-us {
+#about-us-section {
     background-color: #f0c9e0;
+    padding: 0.5em;
+    font-size: 3em;
+    text-align: center;
+}
+
+#learnCodeWrapper {
+    padding: 2.3em 0.3em;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 
 .learnCode {
     transform: rotate(-6deg);
@@ -103,80 +123,102 @@ a:hover {
     padding-left: 0.2em;
     margin-right: 0.1em;
     border: 3px dotted #ffd4d9;
-    display: -webkit-inline-box;
+    display: inline-block;
     white-space: nowrap;
 }
 
-#learnCodeWrapper {
-    padding: 20px;
-}
 
-#about-us #inYourSpareTime {
+#inYourSpareTime {
     font-size: .6em;
     color: #ce70a8;
-    white-space: nowrap;
     text-shadow: 1px 1px 2px #fff;
-    padding-bottom: 0.5em;
-    display: -webkit-inline-box;
+    margin: 0;
+    position: relative;
+    bottom: 1em;
 }
 
+#lineBreak1::after {
+    content: "\a";
+    white-space: pre;
+}
 
 
 /* End About Us Section */
 
-
-.headingStyle {
-    font-size: .7em;
-    background-color: #9e5581;
-    color: #fff;
-    padding-right: 0.2em;
-    padding-left: 0.2em;
-    margin-right: 0.1em;
-    margin-bottom: 0.5em;
-    border: 3px dotted #ffd4d9;
-    display: -webkit-inline-box;
-    white-space: nowrap;
-}
 
 
 /* HTML Basics Section */
 
 #html-basics-section {
     background-color: #b4baea;
-    background-size: 13%;
     background-image: url(/images/BG\ check.png);
+    background-size: 30%;
 }
 
 
-#html-basics {
-    height: 650px;
-    font-size: 50px;
-    padding: 2px;
-    text-transform: uppercase;
-    font-size: 50px;
-    /* this doesnt change anything??
-    display: flex;
-    Justify-content: space-around;
-    flex-wrap: wrap; */
+#html-basics-section .headingStyle {
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #9e5581;
+    color: #fff;
+    padding-right: 0.2em;
+    padding-left: 0.3em;
+    margin-right: 0.3em;
+    margin-bottom: 0.5em;
+    border: 3px dotted #ffd4d9;
+    display: -webkit-inline-box;
 
 }
 
 #html-basics-section,
 h2 {
     text-align: center;
-    color: #ce70a8;
-    font-size: 2em;
-    padding: 20px;
+    font-size: 1.5em;
+    padding: 2em .3em;
 }
 
+
+
+/* Controls all articles characteristics */
+
+.article-excerpts {
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-wrap: break-word;
+    height: fit-content;
+    padding: 1em .5em;
+
+}
+
+article {
+    border-radius: 25px;
+    min-height: 200px;
+    min-width: 200px;
+    border: 4px solid #9e5581;
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px #000;
+    transform: ;
+}
+
+article:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+
+/* Controls individual articles background images */
 #html-article {
     background-image: url(/images/html1.jpg);
-    background-position: center;
 }
 
 #lists-article {
     background-image: url(/images/coding1.jpg);
-    word-wrap: break-word;
 }
 
 #links-article {
@@ -191,86 +233,78 @@ h2 {
     background-image: url(/images/girlcomputer.jpg);
 }
 
-article {
-    border-radius: 25px;
-    padding: 10px;
-    height: 250px;
-    width: 250px;
-    border: 4px solid #9e5581;
-    ;
-    margin: 10px;
-    padding: 10px;
-    background-size: cover;
-    background-position: center;
-}
 
 
-.article-excerpts {
-    height: 20px;
-    color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
 
 
-}
 
 /* End HTML Basics Section */
-
-
-.container {
-    margin: 0 auto;
-    height: 400px;
-    font-size: 50px;
-    display: flex;
-    Justify-content: space-around;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-}
-
 
 
 
 /* Sign Up Section */
 
-#signup-form,
+
+#signup-form-section {
+    background-color: antiquewhite;
+    height: fit-content;
+}
+
+
+#signup-form-section,
 h2 {
     text-align: center;
     color: #ce70a8;
-    font-size: 2em;
+    font-size: 1.5rem;
     padding: 20px;
-}
-
-
-#signup-form {
-    background-color: antiquewhite;
-    height: 1000px;
-    width: 100%;
-
 
 }
+
+#signup-form-section .headingStyle {
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #9e5581;
+    color: #fff;
+    padding-right: 0.2em;
+    padding-left: 0.3em;
+    margin-right: 0.3em;
+    margin-bottom: 0.5em;
+    border: 3px dotted #ffd4d9;
+    display: -webkit-inline-box;
+
+}
+
 
 
 /* Sign Up Form */
 .form {
-    padding: 40px;
+    padding: 5px;
     text-align: center;
     background-color: #f0c9e0;
-    width: 50%;
+    width: 80%;
     height: 50%;
     margin: 0 auto;
     border-radius: 25px;
     border: 10px dotted #ce70a8;
     box-shadow: 10px 10px 200px orange;
-
+    display: flex;
+    flex-direction: column;
 
 }
+
+.form .form-H2 {
+    font-size: 1.3rem;
+    color: #ce70a8;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+
 
 .field {
     font-size: 1.2rem;
     margin-bottom: 1em;
     color: #858ab2;
-
 }
 
 
@@ -285,6 +319,7 @@ h2 {
     padding: 3px 2px;
     margin: 8px 0px;
     box-sizing: border-box;
+
 
 }
 
@@ -316,59 +351,121 @@ input[type=submit]:hover {
 }
 
 
-
-
 textarea {
     color: #858ab2;
     margin: auto;
     margin-top: 1em;
     display: block;
-    min-height: 10em;
-    min-width: 20em;
+    min-height: 8em;
+    min-width: 15em;
     border: none;
     background-color: #FFFFFF50;
     resize: none;
     outline: none;
+
 }
 
 
 /* End Sign Up form */
 
 
+
+/* FOOTER */
+
+.footer {
+    height: 40px;
+    padding: 10px;
+    position: fixed bottom 0;
+    background: #fff;
+    color: rgb(234, 124, 198);
+    text-align: center;
+}
+
+
+
+/* END FOOTER */
+
+
 /* MEDIA QUERIES */
-/* Change these values because they are Sams */
-@media only screen and (max-width: 600px) {
-    p {
-        width: 60%;
-        margin: 0 auto;
-        padding: 20px;
+
+
+/* IPAD */
+@media only screen and (min-width: 768px) {
+
+
+    #html-basics-section {
+        height: fit-content;
+        background-size: 20%;
     }
 
-    img {
-        border: 10px solid red;
+
+
+
+    article {
+        min-height: 200px;
+        min-width: 200px;
     }
+
+
+    .form {
+        width: 60%;
+        height: 30%;
+
+    }
+
 
 }
 
-@media only screen and (max-width: 375px) {
-    img {
-        border: 10px dotted orange;
+/* DESKTOP  */
+@media only screen and (min-width: 1024px) {
+
+    #about-us-section {
+        height: 400px;
+        display: flex;
+        justify-content: center;
+
     }
+
+    #learnCodeWrapper {
+        padding: .7em 0.3em;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .learnCode {
+        font-size: 1.2em;
+    }
+
 
     #inYourSpareTime {
-        font-size: 0.2em;
+        font-size: .8em;
+        bottom: 10px;
+        padding-left: 5px;
     }
 
-    button {
-        background-color: pink;
-        height: 30px;
-        width: 200px;
+    #lineBreak1::after {
+        content: normal;
+        white-space: normal;
     }
-}
 
-@media (orientation: portrait) {
+
+    #html-basics-section {
+        background-size: 13%;
+        height: fit-content;
+    }
+
+
     article {
-        width: 200px;
+        min-height: 250px;
+        min-width: 250px;
+    }
+
+
+    .form {
+        width: 35%;
+        height: 25%;
+        margin: 0 auto;
     }
 
 }
