@@ -4,6 +4,12 @@ Med Pink: #ce70a8
 Light Blue #b4baea */
 
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 body {
     padding-top: 10px;
@@ -119,9 +125,8 @@ a:hover {
     font-size: 1em;
     background-color: #9e5581;
     color: #fff;
-    padding-right: 0.2em;
-    padding-left: 0.2em;
-    margin-right: 0.1em;
+    padding: 0em 0.2em;
+    margin: 0.8em 0.1em;
     border: 3px dotted #ffd4d9;
     display: inline-block;
     white-space: nowrap;
@@ -146,7 +151,153 @@ a:hover {
 /* End About Us Section */
 
 
+/* End About Us Section */
 
+/* To Do List Section */
+
+#todolist-section {
+    background-image: linear-gradient(120deg,#e2c35d, #d88771);
+    min-height: 100vh;
+
+}
+
+#todolist-section h2 {
+ color: #FFF;
+ font-size: 2rem;
+ padding: 1em 0em;
+
+}
+
+#todolist-section form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   }
+
+   form input, form button {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    background: #FFF;
+   }
+
+   form button {
+    color: #d88771;
+    background: #FFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+   }
+
+   form button:hover {
+    background: #d88771;
+    color: #FFF;
+   }
+
+   .todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .todo-list {
+    min-width: 50%;
+    list-style: none;
+
+   }
+
+   .todo {
+    margin: 1rem;
+    background: #FFF;
+    color: #000;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+   }
+
+
+   .todo li {
+    flex: 1;
+   }
+
+   .trash-btn, .complete-btn {
+    background: #FF6F47;
+    color: #FFF;
+    border: none;
+    padding: 0.3rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+   }
+
+   .complete-btn {
+    background: #31be31;
+   }
+
+   li, .todo-item {
+padding: 0rem 0.6rem;
+   }
+
+.fa-trash, .fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select {
+    margin: 0.8rem;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+
+select {
+    width: 10rem;
+    cursor: pointer;
+    padding: 0.9rem;
+    color: #FF6F47;
+}
+
+.select::after {
+    content: "\25BC";
+    font-size: 0.8rem;
+    position: absolute;
+    background: #ff6f47;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after {
+background: #FFF;
+color: #ff6f47;
+
+}
+
+
+
+/* End To Do List Section */
 /* HTML Basics Section */
 
 #html-basics-section {
@@ -198,11 +349,11 @@ article {
     min-width: 200px;
     border: 4px solid #9e5581;
     margin: 10px;
+    padding: .3em 0em;
     background-size: cover;
     background-position: center;
     font-size: 1.5em;
     text-shadow: 1px 1px 2px #000;
-    transform: ;
 }
 
 article:hover {
